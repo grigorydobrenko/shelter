@@ -175,6 +175,9 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
 
@@ -216,6 +219,7 @@ html {
       -ms-flex: 1 0 38.33333%;
           flex: 1 0 38.33333%;
   margin-right: 42px;
+  margin-bottom: 243px;
 }
 
 .start-screen__title {
@@ -256,11 +260,7 @@ html {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 58.16667%;
           flex: 0 1 58.16667%;
-  width: 104.29799%;
-}
-
-.start-screen__img img {
-  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -272,5 +272,58 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.about-the-shelter__two-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 120px;
+  padding: 80px 0 100px 0;
+}
+
+.about-the-shelter__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 14px 0;
+  width: 35.83333%;
+}
+
+.about-the-shelter__title {
+  margin-bottom: 25px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+.about-the-shelter__description p {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #4c4c4c;
+}
+
+.about-the-shelter__description p:not(:last-child) {
+  margin-bottom: 25px;
 }
 /*# sourceMappingURL=style.css.map */
