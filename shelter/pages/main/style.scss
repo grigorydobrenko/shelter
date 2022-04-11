@@ -212,7 +212,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 120px;
-    padding: 80px 0 100px 0;
+    padding: 80px 0 95px 0;
   }
   // .about-the-shelter__img
   &__img {
@@ -222,7 +222,6 @@ body {
     @include flexColumn();
     padding: 14px 0;
     width: (430/1200) * 100%;
-    
   }
   // .about-the-shelter__title
   &__title {
@@ -234,7 +233,7 @@ body {
     line-height: 130%;
     display: flex;
     align-items: center;
-    letter-spacing: 0.06em; 
+    letter-spacing: 0.06em;
     color: #545454;
   }
   // .about-the-shelter__description
@@ -244,11 +243,185 @@ body {
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
-      line-height: 160%;    
-      color: #4c4c4c;          
+      line-height: 160%;
+      color: #4c4c4c;
     }
     p:not(:last-child) {
       margin-bottom: 25px;
     }
   }
+}
+
+.title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  /* or 45px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  /* color-dark-l */
+
+  color: #545454;
+}
+
+.pets {
+  // .pets__title
+  background-color: #f6f6f6;
+  &__container {
+    @include flexColumn();
+  }
+
+  &__title {
+    max-width: (400/1200) * 100%;
+    margin: 0 auto;
+    padding: 76px 0 60px 0;
+  }
+  // .pets__slider
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+  // .pets__left-button
+  &__left-button {
+    min-width: 53px;
+    min-height: 53px;
+    border-radius: 25px;
+    margin: auto 0;
+    background-image: url("../../assets/svg/button_arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+  // .pets__items
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    margin-left: 53px;
+    margin-right: 53px;
+  }
+  // .pets__item
+  &__item {
+    min-width: (270/1200) * 100%;
+    background-color: #fafafa;
+  }
+  // .pets__img
+  &__img {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  // .pets__name
+  &__name {
+    margin: 25px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    /* color-dark-l */
+
+    color: #545454;
+  }
+  // .pets__button
+  &__button {
+    display: flex;
+    justify-content: center;
+    // margin-left: 42px;
+    margin-bottom: 30px;
+  }
+
+  // .pets__right-button
+  &__right-button {
+    min-width: 53px;
+    min-height: 53px;
+    border-radius: 25px;
+    margin: auto 0;
+    background-image: url("../../assets/svg/button_arrow2.svg");
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+
+  &__main-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+}
+
+.help {
+  // .help__title
+
+  
+
+  &__title {
+    width: (320/1200) * 100%;
+    margin: 0 auto;
+    padding: 80px 0 60px 0;
+    // padding-left: 50px;
+    // text-align: center;
+    letter-spacing: 0.06em;
+  }
+  // .help__list
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 120px;
+    row-gap: 55px;
+    flex-wrap: wrap;
+    // padding: 0 87px;
+    // padding-left: 50px;
+  }
+  // .help__item
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }
+
+ 
+  // .help__img
+  &__img {
+    
+    margin-bottom: 30px;
+  }
+  // .help__description
+  &__description {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    /* color-dark-l */
+
+    color: #545454;
+  }
+}
+.container {
 }

@@ -62,6 +62,11 @@
   transition: background-color 0.3s ease 0s;
 }
 
+.btn_transparent {
+  background-color: #FAFAFA;
+  border: 3px solid #F1CDB3;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -282,7 +287,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 120px;
-  padding: 80px 0 100px 0;
+  padding: 80px 0 95px 0;
 }
 
 .about-the-shelter__content {
@@ -325,5 +330,205 @@ html {
 
 .about-the-shelter__description p:not(:last-child) {
   margin-bottom: 25px;
+}
+
+.title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  /* or 45px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  /* color-dark-l */
+  color: #545454;
+}
+
+.pets {
+  background-color: #f6f6f6;
+}
+
+.pets__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pets__title {
+  max-width: 33.33333%;
+  margin: 0 auto;
+  padding: 76px 0 60px 0;
+}
+
+.pets__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 60px;
+}
+
+.pets__left-button {
+  min-width: 53px;
+  min-height: 53px;
+  border-radius: 25px;
+  margin: auto 0;
+  background-image: url("../../assets/svg/button_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.pets__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 90px;
+  margin-left: 53px;
+  margin-right: 53px;
+}
+
+.pets__item {
+  min-width: 22.5%;
+  background-color: #fafafa;
+}
+
+.pets__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pets__name {
+  margin: 25px 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  /* color-dark-l */
+  color: #545454;
+}
+
+.pets__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.pets__right-button {
+  min-width: 53px;
+  min-height: 53px;
+  border-radius: 25px;
+  margin: auto 0;
+  background-image: url("../../assets/svg/button_arrow2.svg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.pets__main-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+}
+
+.help__title {
+  width: 26.66667%;
+  margin: 0 auto;
+  padding: 80px 0 60px 0;
+  letter-spacing: 0.06em;
+}
+
+.help__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 120px;
+          column-gap: 120px;
+  row-gap: 55px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.help__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.help__img {
+  margin-bottom: 30px;
+}
+
+.help__description {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  /* color-dark-l */
+  color: #545454;
 }
 /*# sourceMappingURL=style.css.map */
