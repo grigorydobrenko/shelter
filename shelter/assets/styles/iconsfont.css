@@ -10,7 +10,7 @@
   font-display: block;
 }
 
-[class^="_icon-"]:before, [class*=" _icon-"]:before {
+[class^="_icon-"]::before, [class*=" _icon-"]::before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icons' !important;
   speak: never;
@@ -32,6 +32,7 @@
 ._icon-mail:before {
   content: "\e901";
   color: #f1cdb3;
+  
 }
 ._icon-phone:before {
   content: "\e902";
@@ -39,5 +40,4 @@
 }
 ._icon-credit-card:before {
   content: "\e903";
-  color: black;
 }
