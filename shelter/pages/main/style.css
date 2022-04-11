@@ -205,6 +205,12 @@ html {
   /* identical to box height, or 24px */
   /* color-dark-s */
   color: #cdcdcd;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.menu__link:hover {
+  cursor: pointer;
 }
 
 .start-screen {
@@ -259,6 +265,12 @@ html {
 
 .start-screen__button {
   margin-top: 42px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.start-screen__button:hover {
+  cursor: pointer;
 }
 
 .start-screen__img {
@@ -390,6 +402,13 @@ html {
   background-image: url("../../assets/svg/button_arrow.svg");
   background-repeat: no-repeat;
   background-position: center 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.pets__left-button:hover {
+  cursor: pointer;
+  background-color: #F1CDB3;
 }
 
 .pets__items {
@@ -407,6 +426,22 @@ html {
 .pets__item {
   min-width: 22.5%;
   background-color: #fafafa;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border-radius: 10px;
+}
+
+.pets__item:hover {
+  cursor: pointer;
+  background-color: #CDCDCD;
+}
+
+.pets__item:hover .pets__button a {
+  background-color: #F1CDB3;
+}
+
+.pets__item__button {
+  background-color: #CDCDCD;
 }
 
 .pets__img img {
@@ -447,6 +482,12 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.pets__button:hover {
+  cursor: pointer;
 }
 
 .pets__right-button {
@@ -457,6 +498,13 @@ html {
   background-image: url("../../assets/svg/button_arrow2.svg");
   background-repeat: no-repeat;
   background-position: center 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.pets__right-button:hover {
+  cursor: pointer;
+  background-color: #F1CDB3;
 }
 
 .pets__main-button {
@@ -658,6 +706,7 @@ html {
 }
 
 .footer__first-column-item {
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -676,7 +725,20 @@ html {
   color: #f1cdb3;
 }
 
+.footer__first-column-item a {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+  letter-spacing: 0.06em;
+  /* color-primary */
+  color: #f1cdb3;
+}
+
 .footer__second-column-item {
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,5 +756,17 @@ html {
   /* color-primary */
   color: #f1cdb3;
   margin-bottom: 60px;
+}
+
+.footer__second-column-item a {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+  letter-spacing: 0.06em;
+  /* color-primary */
+  color: #f1cdb3;
 }
 /*# sourceMappingURL=style.css.map */

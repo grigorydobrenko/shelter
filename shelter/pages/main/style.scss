@@ -125,6 +125,10 @@ body {
     /* color-dark-s */
 
     color: #cdcdcd;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      cursor:pointer;
+    }
   }
 }
 
@@ -189,6 +193,10 @@ body {
   // .start-screen__button
   &__button {
     margin-top: 42px;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      cursor: pointer;
+    }
   }
   // .start-screen__img
   &__img {
@@ -297,6 +305,11 @@ body {
     background-image: url("../../assets/svg/button_arrow.svg");
     background-repeat: no-repeat;
     background-position: center 0;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      cursor: pointer;
+      background-color: #F1CDB3;
+    }
   }
   // .pets__items
   &__items {
@@ -310,6 +323,19 @@ body {
   &__item {
     min-width: (270/1200) * 100%;
     background-color: #fafafa;
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+    &:hover {
+      cursor: pointer;
+      background-color: #CDCDCD;
+      .pets__button a {
+        background-color: #F1CDB3;
+      }
+    }
+    &__button {
+      background-color: #CDCDCD;
+    }
+    
   }
   // .pets__img
   &__img {
@@ -345,6 +371,10 @@ body {
     justify-content: center;
     // margin-left: 42px;
     margin-bottom: 30px;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   // .pets__right-button
@@ -356,6 +386,11 @@ body {
     background-image: url("../../assets/svg/button_arrow2.svg");
     background-repeat: no-repeat;
     background-position: center 0;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      cursor: pointer;
+      background-color: #F1CDB3;
+    }
   }
 
   &__main-button {
@@ -542,6 +577,7 @@ body {
   }
   // .footer__first-column-item
   &__first-column-item {
+    display: block;
     display: flex;
     align-items: center;
     
@@ -559,9 +595,24 @@ body {
     /* color-primary */
 
     color: #f1cdb3;
+    a {
+      font-family: "Georgia";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 115%;
+      /* identical to box height, or 23px */
+  
+      letter-spacing: 0.06em;
+  
+      /* color-primary */
+  
+      color: #f1cdb3;
+    }
   }
   // .footer__second-column-item
   &__second-column-item {
+    display: block;
     display: flex;
     align-items: center;
     position: relative;
@@ -578,7 +629,20 @@ body {
 
     color: #f1cdb3;
     margin-bottom: 60px;
+    a {
+      font-family: "Georgia";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 115%;
+      /* identical to box height, or 23px */
+  
+      letter-spacing: 0.06em;
+  
+      /* color-primary */
+  
+      color: #f1cdb3;
+    }
   }
 }
-.container {
-}
+
