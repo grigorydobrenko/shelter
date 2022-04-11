@@ -4,21 +4,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../../assets/styles/global.css">
+  <title>Document</title>  
+  <link rel="stylesheet" href="../../assets/styles/normalize.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="main">
+<body class="body">
   <div class="wrapper">
     <header class="header">
-      <div class="header__container">
+      <div class="header__container container">
         <div class="header__logo">
-          <h1 class="header__title"></h1>
-          <h5 class="header__subtitle"></h5>
+          <h1 class="header__title">Cozy House</h1>
+          <h5 class="header__subtitle">Shelter for pets in Boston</h5>
         </div>
-        <nav class="menu"></nav>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="" class="menu__link">About the shelter</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Our pets</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Help the shelter</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Contacts</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main main-of-main-page">
+      <section class="start-screen">
+        <div class="start-screen__container container">
+          <div class="two-columns">
+            <div class="start-screen__content">
+              <h2 class="start-screen__title">Not only people<br> need a house</h2>
+              <div class="start-screen__description">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</div>
+              <div class="start-screen__button"><a href="" class="start-screen__btn btn">Make a friend</a></div>
+            </div>
+            <div class="start-screen__img">
+              <img src="../../assets/svg/start-screen-puppy.svg" alt="pet">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer"></footer>
   </div>
 </body>

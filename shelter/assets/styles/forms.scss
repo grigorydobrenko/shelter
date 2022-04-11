@@ -1,0 +1,22 @@
+// btn
+
+.btn {
+  text-decoration: none;
+  box-sizing: border-box;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px 45px;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;  
+  letter-spacing: 0.06em;
+  color: #292929;
+  background-color: #F1CDB3;
+  transition: background-color 0.3s ease 0s;
+}
