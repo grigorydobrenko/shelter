@@ -292,19 +292,18 @@ body {
   }
   // .pets__slider
   &__slider {
+    
     display: flex;
-    flex-direction: row;
+
+    align-items: center;
     margin-bottom: 60px;
   }
   // .pets__left-button
   &__left-button {
-    min-width: 53px;
-    min-height: 53px;
-    border-radius: 25px;
-    margin: auto 0;
-    background-image: url("../../assets/svg/button_arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center 0;
+    min-width: 52px;
+    min-height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
     transition: all 0.3s ease 0s;
     &:hover {
       cursor: pointer;
@@ -327,7 +326,7 @@ body {
     border-radius: 10px;
     &:hover {
       cursor: pointer;
-      background-color: #CDCDCD;
+      background-color: #FFFFFF;
       .pets__button a {
         background-color: #F1CDB3;
       }
@@ -379,13 +378,10 @@ body {
 
   // .pets__right-button
   &__right-button {
-    min-width: 53px;
-    min-height: 53px;
-    border-radius: 25px;
-    margin: auto 0;
-    background-image: url("../../assets/svg/button_arrow2.svg");
-    background-repeat: no-repeat;
-    background-position: center 0;
+    min-width: 52px;
+    min-height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
     transition: all 0.3s ease 0s;
     &:hover {
       cursor: pointer;

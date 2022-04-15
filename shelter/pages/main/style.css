@@ -64,7 +64,7 @@
 
 .btn_transparent {
   background-color: #FAFAFA;
-  border: 3px solid #F1CDB3;
+  border: 2px solid #F1CDB3;
 }
 
 html {
@@ -387,21 +387,17 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 60px;
 }
 
 .pets__left-button {
-  min-width: 53px;
-  min-height: 53px;
-  border-radius: 25px;
-  margin: auto 0;
-  background-image: url("../../assets/svg/button_arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center 0;
+  min-width: 52px;
+  min-height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
@@ -433,7 +429,7 @@ html {
 
 .pets__item:hover {
   cursor: pointer;
-  background-color: #CDCDCD;
+  background-color: #FFFFFF;
 }
 
 .pets__item:hover .pets__button a {
@@ -491,13 +487,10 @@ html {
 }
 
 .pets__right-button {
-  min-width: 53px;
-  min-height: 53px;
-  border-radius: 25px;
-  margin: auto 0;
-  background-image: url("../../assets/svg/button_arrow2.svg");
-  background-repeat: no-repeat;
-  background-position: center 0;
+  min-width: 52px;
+  min-height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }

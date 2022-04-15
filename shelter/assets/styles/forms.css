@@ -22,13 +22,46 @@
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #292929;
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
   -webkit-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
 }
 
 .btn_transparent {
-  background-color: #FAFAFA;
-  border: 3px solid #F1CDB3;
+  background-color: #fafafa;
+  border: 2px solid #f1cdb3;
+}
+
+.round-button {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #f1cdb3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #292929;
+}
+
+.round-button_disabled {
+  color: #cdcdcd;
+  border: 2px solid #cdcdcd;
+  color: #cdcdcd;
+}
+
+.round-button:hover {
+  cursor: pointer;
+  background-color: #F1CDB3;
+}
+
+.round-button_static {
+  background-color: #F1CDB3;
 }
 /*# sourceMappingURL=forms.css.map */
