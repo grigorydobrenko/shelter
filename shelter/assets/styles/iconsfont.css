@@ -28,16 +28,20 @@
 ._icon-pin:before {
   content: "\e900";
   color: #f1cdb3;
+  font-size: 32px;
 }
 ._icon-mail:before {
   content: "\e901";
   color: #f1cdb3;
-  
+  font-size: 25px;
 }
 ._icon-phone:before {
   content: "\e902";
   color: #f1cdb3;
+  font-size: 32px;
+  
 }
 ._icon-credit-card:before {
   content: "\e903";
+  font-size: 23px;
 }
