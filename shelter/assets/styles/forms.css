@@ -50,18 +50,22 @@
   color: #292929;
 }
 
-.round-button_disabled {
-  color: #cdcdcd;
-  border: 2px solid #cdcdcd;
-  color: #cdcdcd;
-}
-
 .round-button:hover {
   cursor: pointer;
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
 }
 
 .round-button_static {
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
+}
+
+.round-button_disabled {
+  color: #cdcdcd;
+  border: 2px solid #cdcdcd;
+}
+
+.round-button_disabled:hover {
+  cursor: default;
+  background-color: transparent;
 }
 /*# sourceMappingURL=forms.css.map */

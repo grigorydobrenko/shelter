@@ -38,31 +38,31 @@
   font-size: 20px;
   line-height: 115%;
   /* identical to box height, or 23px */
-  
-  
+
   // text-align: center;
   letter-spacing: 0.06em;
- 
-    text-align: center;
-    color:  #292929;
 
+  text-align: center;
+  color: #292929;
+
+ 
+  &:hover {
+    cursor: pointer;
+    background-color: #f1cdb3;
+  }
+  &_static {
+    background-color: #f1cdb3;
+  }
   &_disabled {
     color: #cdcdcd;
     border: 2px solid #cdcdcd;
-   
-      color: #cdcdcd;      
+    
+    &:hover {
+    cursor: default;
+    background-color: transparent;
+    }
+    
     
   }
-  &:hover {
-    cursor: pointer;
-    background-color: #F1CDB3;
-  }
-  &_static {
-    background-color: #F1CDB3;
-  }
- 
 }
-
-
-
 
