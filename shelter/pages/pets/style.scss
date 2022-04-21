@@ -56,7 +56,9 @@ $bp5: 320;
 }
 
 .header {
-  // margin: 60px 0;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
 
   &__container {
     display: flex;

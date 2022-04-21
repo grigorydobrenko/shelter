@@ -1231,7 +1231,6 @@ html {
 
 @media (max-width: 992px) {
   .footer__three-columns {
-    margin-top: 18px;
     padding: 0 34px;
   }
 }

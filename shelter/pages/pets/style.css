@@ -149,6 +149,13 @@ html {
           flex: 1 1 auto;
 }
 
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
