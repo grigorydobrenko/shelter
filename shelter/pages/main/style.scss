@@ -21,6 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   // padding: 0 40px;
+
 }
 // break points
 $bp1: 1279;
@@ -57,8 +58,9 @@ $bp5: 320;
 
 .header {
   background: linear-gradient(to right, #5b483a, #262425);
+ 
   // margin: 60px 0;
-
+  
   &__container {
     display: flex;
     position: relative;
@@ -172,8 +174,11 @@ $bp5: 320;
   overflow: hidden;
 }
 
+
+
 .menu {
   // .menu__list
+  z-index: 10;
   @media (max-width: $bp4+px) {
     transform: translate(100%, 0);
     box-sizing: border-box;
@@ -239,6 +244,7 @@ $bp5: 320;
 
     color: #cdcdcd;
     transition: all 0.8s ease 0s;
+    scroll-behavior: smooth;
     &:hover {
       cursor: pointer;
     }
@@ -401,6 +407,19 @@ $bp5: 320;
     }
   }
 }
+
+.overlay {
+  display: none;
+  position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; top: 0; bottom: 0; /* Занимает всё пространство */
+  background: rgba(41, 41, 41, 0.6);
+}
+
+.display-block {
+  display: block;
+}
+
+
 
 .about-the-shelter {
   // .about-the-shelter__two-columns

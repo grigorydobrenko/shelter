@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Georgia";
   src: url(../fonts/georgia/georgia-regular.ttf);
@@ -305,6 +306,10 @@ body {
   overflow: hidden;
 }
 
+.menu {
+  z-index: 10;
+}
+
 @media (max-width: 767px) {
   .menu {
     -webkit-transform: translate(100%, 0);
@@ -385,6 +390,7 @@ body {
   color: #cdcdcd;
   -webkit-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
+  scroll-behavior: smooth;
 }
 
 .menu__link:hover {
@@ -585,6 +591,22 @@ body {
     margin-top: 105px;
     height: 270px;
   }
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  /* Абсолютное позиционирование */
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* Занимает всё пространство */
+  background: rgba(41, 41, 41, 0.6);
+}
+
+.display-block {
+  display: block;
 }
 
 .about-the-shelter__two-columns {
