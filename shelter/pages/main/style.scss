@@ -410,8 +410,8 @@ $bp5: 320;
 
 .overlay {
   display: none;
-  position: absolute; /* Абсолютное позиционирование */
-    left: 0; right: 0; top: 0; bottom: 0; /* Занимает всё пространство */
+  position: absolute; 
+    left: 0; right: 0; top: 0; bottom: 0; 
   background: rgba(41, 41, 41, 0.6);
 }
 
