@@ -93,5 +93,25 @@ const petsJson = `
 
 let parsed = JSON.parse(petsJson);
 
-console.log(parsed);
 
+for (let i = 0; i < parsed.length; i++) {
+  parsed[i].id = i;
+}
+
+
+
+// console.log(parsed);
+
+
+
+
+/* let arr = [];
+
+parsed.forEach(element => {
+  obj[element.name] = element;
+});
+ */
+
+
+
+export default parsed;

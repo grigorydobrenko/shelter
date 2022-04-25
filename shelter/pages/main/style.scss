@@ -13,7 +13,6 @@ html {
 }
 
 body {
- 
   height: 100vh;
 }
 
@@ -21,7 +20,6 @@ body {
   display: flex;
   flex-direction: column;
   // padding: 0 40px;
-
 }
 // break points
 $bp1: 1279;
@@ -58,9 +56,9 @@ $bp5: 320;
 
 .header {
   background: linear-gradient(to right, #5b483a, #262425);
- 
+
   // margin: 60px 0;
-  
+
   &__container {
     display: flex;
     position: relative;
@@ -78,16 +76,14 @@ $bp5: 320;
   }
   // .header__logo
   &__logo {
-    
     display: flex;
     flex-direction: column;
     z-index: 6;
     transition: all 3s;
     @media (max-width: $bp4+px) {
-      
       &_active {
         position: absolute;
-        right: 126px; 
+        right: 126px;
       }
     }
   }
@@ -154,15 +150,14 @@ $bp5: 320;
       height: 2px;
       background-color: #f1cdb3;
     }
-    
-  &_active {
-     transform: rotate(90deg);
+
+    &_active {
+      transform: rotate(90deg);
       position: absolute;
       right: 58px;
-      margin-right: 0; 
+      margin-right: 0;
+    }
   }
-  
-}
 }
 
 .sticky {
@@ -174,8 +169,6 @@ $bp5: 320;
   overflow: hidden;
 }
 
-
-
 .menu {
   // .menu__list
   z-index: 10;
@@ -186,17 +179,16 @@ $bp5: 320;
     z-index: 5;
     top: 0;
     right: 0;
-    
+
     width: 320px;
     height: 100vh;
     overflow: auto;
     background-color: #262425;
     padding: 248px 38px 0 38px;
     overflow: auto;
-    
+
     transition: transform 0.8s ease 0s;
-    
-   
+
     &_active {
       transform: translate(0px, 0%);
     }
@@ -410,16 +402,17 @@ $bp5: 320;
 
 .overlay {
   display: none;
-  position: absolute; 
-    left: 0; right: 0; top: 0; bottom: 0; 
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   background: rgba(41, 41, 41, 0.6);
 }
 
 .display-block {
   display: block;
 }
-
-
 
 .about-the-shelter {
   // .about-the-shelter__two-columns
@@ -521,6 +514,80 @@ $bp5: 320;
   }
 }
 
+.carousel {
+  display: flex;
+  flex-direction: row;
+
+}
+
+// pets items 990, 580, 279   = clientWidth: 580
+.pets__wrapper{
+  width: 990px;
+  overflow: hidden;
+  @media (max-width: $bp1+px) {
+    width: 580px;
+  }
+  @media (max-width: $bp4+px) {
+    width: 270px;
+   
+  }
+  @media (max-width: 420px) {
+  
+    order: -1;
+  }
+}
+
+/* .pets__wrapper_580{
+  
+  overflow: hidden;
+}
+
+.pets__wrapper_270{
+  width: 270px;
+  overflow: hidden;
+}
+ */
+.carousel {
+  position: relative;
+  // left: -990px;
+  @media (max-width: $bp1+px) {
+    // left: -580px;
+  }
+  @media (max-width: $bp4+px) {
+    // left: -270px;
+  }
+}
+
+
+
+
+@keyframes move-left {
+  from {left: -990px; }
+  to {left: 0px;}
+}
+
+@media (max-width: $bp1+px) {
+    @keyframes move-left {
+      from {left: -580px;}
+      to {left: 0px;}
+    }
+  }
+
+  @media (max-width: $bp4+px) {
+    @keyframes move-left {
+      from {left: -270px; }
+      to {left: 0px;}
+    }
+  }
+
+
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 5s;
+}
+
+
 .pets {
   // .pets__title
   background-color: #f6f6f6;
@@ -546,9 +613,10 @@ $bp5: 320;
   // .pets__slider
   &__slider {
     display: flex;
-
+    justify-content: center;
     align-items: center;
     margin-bottom: 60px;
+    flex-wrap: wrap;
     @media (max-width: $bp5+px) {
       flex-wrap: wrap;
       justify-content: center;
@@ -565,6 +633,7 @@ $bp5: 320;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
     &:hover {
       cursor: pointer;
       background-color: #f1cdb3;
@@ -575,17 +644,19 @@ $bp5: 320;
       margin-right: 80px;
     }
   }
+ 
   // .pets__items
   &__items {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 90px;
-    margin-left: 53px;
-    margin-right: 53px;
-    @media (max-width: $bp2+px) {
-      margin-left: 12px;
-      margin-right: 12px;
+    // margin-left: 53px;
+    // margin-right: 53px;
+    
+    @media (max-width: $bp1+px) {
+      // margin-left: 12px;
+      // margin-right: 12px;
       gap: 40px;
     }
     @media (max-width: $bp5+px) {
@@ -594,7 +665,7 @@ $bp5: 320;
   }
   // .pets__item
   &__item {
-    min-width: (270/1200) * 100%;
+    width: 270px;
     background-color: #fafafa;
     transition: all 0.3s ease 0s;
     border-radius: 10px;
@@ -672,7 +743,7 @@ $bp5: 320;
   &__right-button {
     min-width: 52px;
     min-height: 52px;
-
+    margin-left: 10px;
     border: 2px solid #f1cdb3;
     border-radius: 100px;
     transition: all 0.3s ease 0s;

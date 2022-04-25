@@ -107,21 +107,27 @@
               <button class="pets__left-button">
                 <b>←</b>
               </button>
-              <div class="pets__items">
-                <div class="pets__item">
-                  <div class="pets__img"><img src="../../assets/img/katrine.png" alt="katrine"></div>
-                  <div class="pets__name">Katrine</div>
-                  <div class="pets__button "><a href="" class="btn btn_transparent">Learn more</a></div>
-                </div>
-                <div class="pets__item">
-                  <div class="pets__img"><img src="../../assets/img/jennifer.png" alt="jennifer"></div>
-                  <div class="pets__name">Jennifer</div>
-                  <div class="pets__button "><a href="" class="btn btn_transparent">Learn more</a></div>
-                </div>
-                <div class="pets__item">
-                  <div class="pets__img"><img src="../../assets/img/woody.png" alt="woody"></div>
-                  <div class="pets__name">Woody</div>
-                  <div class="pets__button "><a href="" class="btn btn_transparent">Learn more</a></div>
+              <div class="pets__wrapper">
+                <div class="carousel">
+                  <div class="pets__items" id="item-left"></div>
+                  <div class="pets__items"  id="item-active">
+                    <div class="pets__item" data-name="katrine">
+                      <div class="pets__img"><img src="../../assets/img/katrine.png" alt="katrine"></div>
+                      <div class="pets__name">Katrine</div>
+                      <div class="pets__button "><a href="" class="btn btn_transparent">Learn more</a></div>
+                    </div>
+                    <div class="pets__item" data-name="jennifer">
+                      <div class="pets__img"><img src="../../assets/img/jennifer.png" alt="jennifer"></div>
+                      <div class="pets__name">Jennifer</div>
+                      <div class="pets__button "><a href="" class="btn btn_transparent">Learn more</a></div>
+                    </div>
+                    <div class="pets__item" data-name="woody">
+                      <div class="pets__img"><img src="../../assets/img/woody.png" alt="woody"></div>
+                      <div class="pets__name">Woody</div>
+                      <div class="pets__button "><a href="" class="btn btn_transparent">Learn more</a></div>
+                    </div>
+                  </div>
+                  <div class="pets__items" id="item-right"></div>
                 </div>
               </div>
               <button class="pets__right-button">
@@ -184,6 +190,6 @@
         </div>
       </footer>
     </div>
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
