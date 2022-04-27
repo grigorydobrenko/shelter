@@ -82,6 +82,7 @@ const CAROUSEL = document.querySelector(".carousel");
 
 
 BTN_LEFT.addEventListener('click', getArr);
+let prevArr = [4,0,2];
 
 function getArr() {
   BTN_LEFT.removeEventListener("click", getArr);
@@ -91,7 +92,7 @@ function getArr() {
     randoms.push(rand);    
     for (let i = 0; i < 2; i++) {
       rand = getRandom(); 
-      while (randoms.includes(rand)) {
+      while (randoms.includes(rand) || prevArr.includes(rand)) {
         rand = getRandom(); 
       }
       randoms.push(rand); 
@@ -115,13 +116,13 @@ function getArr() {
         
   } 
   console.log(randoms);
-  // return randoms;
+  prevArr = randoms;
   for (let i = 0; i < randoms.length; i++) {
     let newItem = createCardTemplate(randoms[i]);
-    ITEM_LEFT.appendChild(newItem);
+    ITEM_LEFT.append(newItem);
   }
   CAROUSEL.classList.add("transition-left");
-
+   
 }
 
 
@@ -130,9 +131,12 @@ function getArr() {
 CAROUSEL.addEventListener("animationend", (animationEvent) => {
   let changedItem;
   if (animationEvent.animationName === "move-left") {
-    CAROUSEL.classList.remove("transition-left");
-    changedItem = ITEM_LEFT;
     document.querySelector("#item-active").innerHTML = ITEM_LEFT.innerHTML;
+    
+    CAROUSEL.classList.remove("transition-left");
+    ITEM_LEFT.innerHTML = '';
+    changedItem = ITEM_LEFT;
+    
   }
   BTN_LEFT.addEventListener('click', getArr);
 });
@@ -142,7 +146,7 @@ CAROUSEL.addEventListener("animationend", (animationEvent) => {
 function createCardTemplate(i) {
   let item = document.createElement("div");
   item.classList.add("pets__item");
-  item.innerHTML = `<div class="pets__img" data-name="${parsed[i].name}"><img src="../../assets/img/${parsed[i].name}.png" alt="${parsed[i].name}"></div>
+  item.innerHTML = `<div class="pets__img" data-name="${parsed[i].name}"><img src=${parsed[i].img} alt="${parsed[i].name}"></div>
   <div class="pets__name">${parsed[i].name}</div>
   <div class="pets__button "><a href="" class="btn btn_transparent">Learn more</a></div>`;
   console.log(item);
