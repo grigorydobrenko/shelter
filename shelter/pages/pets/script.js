@@ -23,16 +23,23 @@ function overLaid() {
   overlay.classList.toggle("display-block");
 }
 
+function addOverlayColor() {
+  header.classList.toggle("header__container_active");
+}
+
 overlay.addEventListener("click", overLaid);
 overlay.addEventListener("click", toggleMenu);
 overlay.addEventListener("click", rotateBurger);
 overlay.addEventListener("click", toggleHidden);
+overlay.addEventListener("click", addOverlayColor);
+
 
 burger.addEventListener("click", () => {
   toggleMenu();
   rotateBurger();
   toggleHidden();
   overLaid();
+  addOverlayColor(); 
 });
 
 menu.addEventListener("click", (event) => {
@@ -42,6 +49,7 @@ menu.addEventListener("click", (event) => {
     overLaid();
     rotateBurger();
     toggleHidden();
+    addOverlayColor();
   }
 });
 
@@ -51,5 +59,6 @@ logo.addEventListener("click", (event) => {
     overLaid();
     rotateBurger();
     toggleHidden();
+    addOverlayColor();
   }
 });

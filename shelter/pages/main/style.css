@@ -190,6 +190,10 @@ body {
   }
 }
 
+.header__container_active {
+  background: rgba(41, 41, 41, 0.6);
+}
+
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
