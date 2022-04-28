@@ -84,7 +84,6 @@ $bp5: 320;
       &_active {
         position: absolute;
         right: 126px;
-       
       }
     }
   }
@@ -518,11 +517,10 @@ $bp5: 320;
 .carousel {
   display: flex;
   flex-direction: row;
-
 }
 
 // pets items 990, 580, 279   = clientWidth: 580
-.pets__wrapper{
+.pets__wrapper {
   width: 990px;
   overflow: hidden;
   @media (max-width: $bp1+px) {
@@ -530,10 +528,8 @@ $bp5: 320;
   }
   @media (max-width: $bp4+px) {
     width: 270px;
-   
   }
   @media (max-width: 420px) {
-  
     order: -1;
   }
 }
@@ -559,35 +555,77 @@ $bp5: 320;
   }
 }
 
-
-
-
 @keyframes move-left {
-  from {left: -990px; }
-  to {left: 0px;}
+  from {
+    left: -990px;
+  }
+  to {
+    left: 0px;
+  }
 }
 
 @media (max-width: $bp1+px) {
-    @keyframes move-left {
-      from {left: -560px;}
-      to {left: 0;}
+  @keyframes move-left {
+    from {
+      left: -580px;
+    }
+    to {
+      left: 0px;
     }
   }
+}
 
-  @media (max-width: $bp4+px) {
-    @keyframes move-left {
-      from {left: -270px; }
-      to {left: 0px;}
+@media (max-width: $bp4+px) {
+  @keyframes move-left {
+    from {
+      left: -270px;
+    }
+    to {
+      left: 0px;
     }
   }
+}
 
+@keyframes move-right {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -990px;
+  }
+}
 
+@media (max-width: $bp1+px) {
+  @keyframes move-right {
+    from {
+      left: 0px;
+    }
+    to {
+      left: -580px;
+    }
+  }
+}
+
+@media (max-width: $bp4+px) {
+  @keyframes move-right {
+    from {
+      left: 0px;
+    }
+    to {
+      left: -270px;
+    }
+  }
+}
 
 .transition-left {
   animation-name: move-left;
   animation-duration: 5s;
 }
 
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 5s;
+}
 
 .pets {
   // .pets__title
@@ -645,7 +683,7 @@ $bp5: 320;
       margin-right: 80px;
     }
   }
- 
+
   // .pets__items
   &__items {
     display: flex;
@@ -654,7 +692,7 @@ $bp5: 320;
     gap: 90px;
     // margin-left: 53px;
     // margin-right: 53px;
-    
+
     @media (max-width: $bp1+px) {
       // margin-left: 12px;
       // margin-right: 12px;

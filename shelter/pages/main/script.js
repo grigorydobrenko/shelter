@@ -82,10 +82,17 @@ const CAROUSEL = document.querySelector(".carousel");
 
 
 BTN_LEFT.addEventListener('click', getArr);
-let prevArr = [4,0,2];
+BTN_RIGHT.addEventListener('click', getArr);
+let prevArr = [];
 
 function getArr() {
-  BTN_LEFT.removeEventListener("click", getArr);
+  if (this === BTN_LEFT) {
+    BTN_LEFT.removeEventListener("click", getArr);
+  } else {
+    BTN_RIGHT.removeEventListener('click', getArr);
+  }
+  
+ 
   let randoms = [];  
   if (WRAPPER.clientWidth == 990) {
     let rand = getRandom();
@@ -102,9 +109,9 @@ function getArr() {
   else if (WRAPPER.clientWidth == 580) {
     let rand = getRandom();
     randoms.push(rand);    
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i <= 1; i++) {
       rand = getRandom(); 
-      while (randoms.includes(rand)) {
+      while (randoms.includes(rand) || prevArr.includes(rand)) {
         rand = getRandom(); 
       }
       randoms.push(rand); 
@@ -119,26 +126,45 @@ function getArr() {
   prevArr = randoms;
   for (let i = 0; i < randoms.length; i++) {
     let newItem = createCardTemplate(randoms[i]);
+    if (this === BTN_LEFT) {
+      
     ITEM_LEFT.append(newItem);
+    console.log('left');
+    } else {
+    ITEM_RIGHT.append(newItem);
+    console.log('right');
+    }
   }
+  if (this === BTN_LEFT) {
   CAROUSEL.classList.add("transition-left");
-   
+ 
+  } else {
+    CAROUSEL.classList.add("transition-right");
+    
+  }
 }
 
 
 
 
 CAROUSEL.addEventListener("animationend", (animationEvent) => {
-  let changedItem;
+ 
   if (animationEvent.animationName === "move-left") {
-    document.querySelector("#item-active").innerHTML = ITEM_LEFT.innerHTML;
-    
+    document.querySelector("#item-active").innerHTML = ITEM_LEFT.innerHTML;    
     CAROUSEL.classList.remove("transition-left");
     ITEM_LEFT.innerHTML = '';
-    changedItem = ITEM_LEFT;
+   
+    
+  } else {
+    document.querySelector("#item-active").innerHTML = ITEM_RIGHT.innerHTML;
+    CAROUSEL.classList.remove("transition-right");
+    ITEM_RIGHT.innerHTML = '';
+    
+    
     
   }
   BTN_LEFT.addEventListener('click', getArr);
+  BTN_RIGHT.addEventListener('click', getArr);
 });
 
 

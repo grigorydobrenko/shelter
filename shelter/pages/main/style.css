@@ -805,18 +805,18 @@ body {
 @media (max-width: 1279px) {
   @-webkit-keyframes move-left {
     from {
-      left: -560px;
+      left: -580px;
     }
     to {
-      left: 0;
+      left: 0px;
     }
   }
   @keyframes move-left {
     from {
-      left: -560px;
+      left: -580px;
     }
     to {
-      left: 0;
+      left: 0px;
     }
   }
 }
@@ -840,9 +840,72 @@ body {
   }
 }
 
+@-webkit-keyframes move-right {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -990px;
+  }
+}
+
+@keyframes move-right {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -990px;
+  }
+}
+
+@media (max-width: 1279px) {
+  @-webkit-keyframes move-right {
+    from {
+      left: 0px;
+    }
+    to {
+      left: -580px;
+    }
+  }
+  @keyframes move-right {
+    from {
+      left: 0px;
+    }
+    to {
+      left: -580px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  @-webkit-keyframes move-right {
+    from {
+      left: 0px;
+    }
+    to {
+      left: -270px;
+    }
+  }
+  @keyframes move-right {
+    from {
+      left: 0px;
+    }
+    to {
+      left: -270px;
+    }
+  }
+}
+
 .transition-left {
   -webkit-animation-name: move-left;
           animation-name: move-left;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.transition-right {
+  -webkit-animation-name: move-right;
+          animation-name: move-right;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
 }
