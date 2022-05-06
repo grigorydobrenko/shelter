@@ -1,0 +1,68 @@
+// btn
+
+.btn {
+  text-decoration: none;
+  box-sizing: border-box;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px 45px;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  background-color: #f1cdb3;
+  transition: background-color 0.3s ease 0s;
+}
+
+.btn_transparent {
+  background-color: #fafafa;
+  border: 2px solid #f1cdb3;
+}
+
+.round-button {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #f1cdb3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+
+  // text-align: center;
+  letter-spacing: 0.06em;
+
+  text-align: center;
+  color: #292929;
+
+ 
+  &:hover {
+    cursor: pointer;
+    background-color: #f1cdb3;
+  }
+  &_static {
+    background-color: #f1cdb3;
+  }
+  &_disabled {
+    color: #cdcdcd;
+    border: 2px solid #cdcdcd;
+    
+    &:hover {
+    cursor: default;
+    background-color: transparent;
+    }
+    
+    
+  }
+}
+
