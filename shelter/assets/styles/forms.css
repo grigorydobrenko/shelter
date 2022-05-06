@@ -1,0 +1,71 @@
+.btn {
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 52px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 15px 45px;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  background-color: #f1cdb3;
+  -webkit-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
+}
+
+.btn_transparent {
+  background-color: #fafafa;
+  border: 2px solid #f1cdb3;
+}
+
+.round-button {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #f1cdb3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #292929;
+}
+
+.round-button:hover {
+  cursor: pointer;
+  background-color: #f1cdb3;
+}
+
+.round-button_static {
+  background-color: #f1cdb3;
+}
+
+.round-button_disabled {
+  color: #cdcdcd;
+  border: 2px solid #cdcdcd;
+}
+
+.round-button_disabled:hover {
+  cursor: default;
+  background-color: transparent;
+}
+/*# sourceMappingURL=forms.css.map */
